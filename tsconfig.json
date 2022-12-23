@@ -42,7 +42,7 @@
     "exclude": [
      "node_modules",
      "dist",
-     "PRNameGenerator.ts",
+     "src/stories",
      "setupTest.ts",
      "jest.config.js",
      "webpack.config.ts"
