@@ -1,20 +1,21 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Card } from '@components/Card';
+import { BaseCard } from "@components/Card/BaseCard";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Card',
-  component: Card,
-} as ComponentMeta<typeof Card>;
+  title: "Foundations/BaseCard",
+  component: BaseCard,
+} as ComponentMeta<typeof BaseCard>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
+const Template: ComponentStory<typeof BaseCard> = (args) => (
+  <BaseCard {...args} />
+);
 
 export const Basic = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Basic.args = {
-  title: 'Test Title',
-  children: <p>Test Content</p>,
+  children: <p>Test Content1</p>,
 };

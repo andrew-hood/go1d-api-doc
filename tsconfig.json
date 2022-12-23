@@ -32,6 +32,8 @@
       "noImplicitAny": false,
       "paths": {
         "@components/*": ["components/*"],
+        "@utils/*": ["utils/*"],
+        "@hooks/*": ["hooks/*"],
       },
     },
     "include": [
@@ -41,5 +43,8 @@
      "node_modules",
      "dist",
      "PRNameGenerator.ts",
+     "setupTest.ts",
+     "jest.config.js",
+     "webpack.config.ts"
     ]
 }
