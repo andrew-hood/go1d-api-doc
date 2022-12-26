@@ -1,21 +1,22 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "target": "es5",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "allowJs": true,
     "declaration": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noEmit": false,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "isolatedModules": false,
@@ -40,6 +41,7 @@
     "node_modules",
     "dist",
     "storybook-static",
+    "stories",
     "setupTest.ts",
     "jest.config.js",
     "webpack.config.ts"
