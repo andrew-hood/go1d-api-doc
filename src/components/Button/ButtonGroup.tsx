@@ -8,7 +8,12 @@ interface Props {
   itemRenderer: (key: string, item?: any) => string;
 }
 
-const ButtonGroup: FC<Props> = ({ items, selected, onClick, itemRenderer }) => {
+export const ButtonGroup: FC<Props> = ({
+  items,
+  selected,
+  onClick,
+  itemRenderer,
+}) => {
   return (
     <View flexDirection="row" alignItems="center">
       {items &&
@@ -33,5 +38,3 @@ const ButtonGroup: FC<Props> = ({ items, selected, onClick, itemRenderer }) => {
     </View>
   );
 };
-
-export default ButtonGroup;

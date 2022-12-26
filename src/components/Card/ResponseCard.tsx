@@ -3,7 +3,7 @@ import { get } from "lodash";
 import React, { FC, useEffect, useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { transformObject } from "@utils/transform";
-import ButtonGroup from "@components/Button/ButtonGroup";
+import { ButtonGroup } from "@components/Button/ButtonGroup";
 import { DetailsCard } from "@components/Card/DetailsCard";
 
 interface Props {

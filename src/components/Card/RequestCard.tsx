@@ -5,7 +5,7 @@ import React, { FC, useState } from "react";
 import { dark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { OpenAPIV3 } from "openapi-types";
 import { BaseCard } from "./BaseCard";
-import ButtonGroup from "@components/Button/ButtonGroup";
+import { ButtonGroup } from "@components/Button/ButtonGroup";
 import SyntaxHighlighter from "react-syntax-highlighter";
 
 interface Props {

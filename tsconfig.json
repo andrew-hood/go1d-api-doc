@@ -1,21 +1,21 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2016",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
+    "declaration": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
+    "module": "commonjs",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noEmit": false,
-    "jsx": "react-jsx",
+    "jsx": "react",
     "experimentalDecorators": true,
     "esModuleInterop": true,
     "isolatedModules": false,
@@ -27,7 +27,7 @@
     ],
     "sourceMap": true,
     "baseUrl": "src",
-    "outDir": "dist",
+    "outDir": "./dist",
     "skipLibCheck": true,
     "noImplicitAny": false,
     "paths": {
@@ -36,13 +36,9 @@
       "@hooks/*": ["hooks/*"],
     },
   },
-  "include": [
-    "**/*"
-  ],
   "exclude": [
     "node_modules",
     "dist",
-    "src/stories",
     "storybook-static",
     "setupTest.ts",
     "jest.config.js",
